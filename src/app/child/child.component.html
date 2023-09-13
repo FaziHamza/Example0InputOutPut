@@ -1,0 +1,15 @@
+<div class="containar">
+  <h2>Child</h2>
+  <h3>Hi! This is comment from parent</h3>
+  <p><b>{{commentFromParent}}</b></p>
+
+  <h3>Send reply to parent</h3>
+  <div class="row">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Enter reply" [(ngModel)]="reply">
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-primary" (click)="submit()"> Send </button>
+      </div>
+    </div>
+  </div>
+</div>

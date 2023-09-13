@@ -1,0 +1,18 @@
+.containar {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #f0f0f0; 
+    color: #333; 
+
+    p {
+        color: rgb(147, 152, 157);
+    }
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+  }

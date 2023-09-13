@@ -1,0 +1,17 @@
+<div class="containar">
+  <h1>Decorater Example</h1>
+  <h2>Parent</h2>
+  <h3>Hi! Send comment To Child</h3>
+  <div class="row">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter comment" [(ngModel)]="comment">
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-primary" (click)="Submit()">Send</button>
+        </div>
+    </div>
+  </div>
+  <h3>This is reply from child</h3>
+  <p class="mb-5"><b>{{replyFromChild}}</b></p>
+
+  <app-child [commentFromParent]="this.commentToChild" (replyToParent1)="getReply($event)"></app-child>
+</div>
